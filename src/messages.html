@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages - Together Culture</title>
+    <link rel="stylesheet" href="member-dashboard.css" />
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Together Culture</h2>
+            <ul>
+                <li><a href="member-dashboard.html">Dashboard</a></li>
+                <li><a href="my-events.html">My Events</a></li>
+                <li><a href="messages.html" class="active">Messages</a></li>
+                <li><a href="content.html">Content</a></li>
+                <li><a href="login.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-panel">
+            <section class="welcome">
+                <h1>Messages</h1>
+                <p>Connect privately with other members</p>
+            </section>
+
+            <div class="message-layout">
+                <div class="message-list">
+                    <h3>Conversations</h3>
+                    <ul id="conversationList">
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+
+                <div class="message-panel">
+                    <h3 id="chatWith">Select a conversation</h3>
+                    <div class="chat-box" id="chatBox">
+                        <!-- messages will appear here -->
+                    </div>
+                    <form onsubmit="sendMessage(event)">
+                        <input type="text" id="messageInput" placeholder="Type a message..." required />
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="messages.js"></script>
+</body>
+
+</html>

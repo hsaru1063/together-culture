@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Together Culture</title>
+    <link rel="stylesheet" href="admin-dashboard.css" />
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-panel">
+            <header class="top-banner">
+                <h1>Welcome, Admin</h1>
+                <p>Overview of the platform stats and member activity</p>
+            </header>
+
+            <section class="stats">
+                <div class="stat-card">
+                    <h3>Active Members</h3>
+                    <p>45</p>
+                </div>
+                <div class="stat-card">
+                    <h3>New Signups</h3>
+                    <p>12</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Events This Month</h3>
+                    <p>7</p>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h2>Member List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice Smith</td>
+                            <td>alice@example.com</td>
+                            <td>Active</td>
+                            <td><button>View</button> <button>Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>john@example.com</td>
+                            <td>Pending</td>
+                            <td><button>View</button> <button>Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="admin-dashboard.js"></script>
+</body>
+
+</html>

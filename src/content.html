@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content - Together Culture</title>
+    <link rel="stylesheet" href="member-dashboard.css" />
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Together Culture</h2>
+            <ul>
+                <li><a href="member-dashboard.html">Dashboard</a></li>
+                <li><a href="my-events.html">My Events</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="content.html" class="active">Content</a></li>
+                <li><a href="login.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-panel">
+            <section class="welcome">
+                <h1>Digital Content Library</h1>
+                <p>Access webinars, courses, and downloadable materials.</p>
+            </section>
+
+            <section class="grid" id="contentGrid">
+                <p>Loading content...</p>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.removeItem("token");
+        }
+    </script>
+
+    <script src="content.js"></script>
+</body>
+
+</html>

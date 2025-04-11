@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    background: #2980b9;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    padding: 0.75rem 2rem;
+    background: white;
+    color: #2980b9;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 2rem;
+    background: #fff;
+}
+
+.feature-card {
+    background: #ecf0f1;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #34495e;
+    color: white;
+    font-size: 0.9rem;
+}

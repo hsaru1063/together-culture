@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Member Dashboard - Together Culture</title>
+    <link rel="stylesheet" href="member-dashboard.css" />
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Together Culture</h2>
+            <ul>
+                <li><a href="member-dashboard.html" class="active">Dashboard</a></li>
+                <li><a href="my-events.html">My Events</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="content.html">Content</a></li>
+                <li><a href="login.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-panel">
+            <section class="welcome">
+                <h1>Welcome back, Member!</h1>
+                <p>Here’s what’s happening today:</p>
+            </section>
+
+            <section class="grid">
+                <div class="card">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Recommended Events</h3>
+                    <ul>
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Messages</h3>
+                    <p>Loading message count...</p>
+                </div>
+
+                <div class="card">
+                    <h3>My Courses</h3>
+                    <ul>
+                        <li>Loading...</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.removeItem("token");
+        }
+    </script>
+
+    <script src="member-dashboard.js"></script>
+</body>
+
+</html>
